@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فروشگاه | War Room</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<div class="page">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="seal">⚔</span>
+        WAR ROOM
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="باز کردن منو">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="shop.html" class="active">فروشگاه</a></li>
+        <li><a href="rules.html">قوانین</a></li>
+        <li><a href="index.html#support">پشتیبانی</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="shop-hero">
+    <div class="container">
+      <p class="eyebrow"><span>دیوان خزانه</span></p>
+      <h1 class="title-section shop-title">فروشگاه War Room</h1>
+      <p class="lede">سپاه و شهر خود را از میان سربازان سه تمدن و بناهای اقتصادی، دفاعی و ویژه شکل دهید.</p>
+    </div>
+  </header>
+
+  <!-- Filter chips -->
+  <div class="filter-bar-wrap">
+    <div class="container">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-chip active" data-filter="all">همه</button>
+        <!-- populated by JS from SHOP_DATA.categories -->
+      </div>
+    </div>
+  </div>
+
+  <main class="shop-main">
+    <div class="container" id="shopMount">
+      <!-- sections rendered by JS -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© War Room — یک پروژه استراتژی تاریخی</span>
+      <span class="footer-support">پشتیبانی: @WarRoomSupport</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/shop-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
